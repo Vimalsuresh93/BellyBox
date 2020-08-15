@@ -1,0 +1,13 @@
+mat-card{
+    position: relative;
+    top:2rem;
+    left:70px;
+    width:50%;
+}
+mat-form-field{
+    width:100%;
+}
+.donorpage{
+    background-image: url(../../../../assets/images/bellyboxdonorpagewall.jpg);
+    height:2000px;
+}

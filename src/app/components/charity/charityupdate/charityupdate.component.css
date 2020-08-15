@@ -1,0 +1,10 @@
+ mat-card{
+    width:50%;
+    position: relative;
+    top:4rem;
+    left:250px;
+}
+.charitypage{
+    background-image: url(../../../../assets/images/charityhomesignup.jpg);
+    height:2000px;
+}

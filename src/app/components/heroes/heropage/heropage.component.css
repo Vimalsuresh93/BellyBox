@@ -1,0 +1,22 @@
+.foodlist .example-card {
+    max-width: 350px;
+    position: relative;
+    top:45px;
+    margin-left:1rem ;
+  }
+  
+  .example-header-image {
+    background-image: url('/assets/images/GOBI-MANCHURIAN.jpg');
+    background-size: cover;
+  }
+  .foodlist{
+      background-image: url(/assets/images/burger-wallpaper-hd-.jpg);
+      width:100% ;
+      height:2000px ;
+      margin-top:-30px ;
+  }
+  h1{
+    position: relative;
+    top:2rem;
+    font-family:lakki;
+  }

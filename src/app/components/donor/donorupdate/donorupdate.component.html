@@ -1,0 +1,80 @@
+<div class="donorpage">
+    <mat-card>
+        <form (ngSubmit)=onupdatefood(foodItem) #addfoodForm="ngForm">
+                <mat-form-field>
+                <input
+                matInput name="foodname"
+                ngModel type="text"
+                placeholder="Enter Food Item"
+                #FoodInput="ngModel"
+                [(ngModel)]="foodItem.foodname"
+                required
+                minlength="5"
+                >
+                <mat-error *ngIf="FoodInput.invalid">Please enter a food item.</mat-error>
+                </mat-form-field><br>
+            <mat-form-field>
+                <input
+               matInput name="portion"
+                ngModel type="text"
+                placeholder="Portion"
+                #PortionInput="ngModel"
+                [(ngModel)]="foodItem.portion"
+                required
+                min="1"
+                >
+                <mat-error *ngIf="PortionInput.invalid">Please enter a valid portion.</mat-error>
+                </mat-form-field><br>
+                 
+                <mat-form-field>
+                    <input
+                    matInput name="pickuppoint"
+                    ngModel type="text"
+                    placeholder="PICKUP POINT"
+                    #PickupPointInput="ngModel"
+                    [(ngModel)]="foodItem.pickuppoint"
+                    required
+                    minlength="8"
+                    >
+                    <mat-error *ngIf="PickupPointInput.invalid">Please Enter Pick up Point.</mat-error>
+                    </mat-form-field><br>
+                    <mat-form-field>
+                        <input
+                        matInput name="contactno"
+                        ngModel type="text"
+                        placeholder="Enter Contact Number"
+                        #contactno="ngModel"
+                        [(ngModel)]="foodItem.contactno"
+                        required
+                        minlength="10"
+                        maxlength="10"
+                        >
+                        <mat-error *ngIf="contactno.invalid">Please Enter valid contact number.</mat-error>
+                        </mat-form-field><br>
+                        <mat-form-field>
+                            <input
+                            matInput name="dealdeadline"
+                            ngModel type="datetime-local"
+                            placeholder="Dealdeadline"
+                            #deadline="ngModel"
+                            [(ngModel)]="foodItem.dealdeadline"
+                            required
+                           >
+                            <mat-error *ngIf="deadline.invalid">Please Enter valid Date&Time.</mat-error>
+                            </mat-form-field><br>
+                            <mat-form-field>
+                                <input
+                                matInput name="price"
+                                ngModel type="number"
+                                placeholder="Enter Price"
+                                #price="ngModel"
+                                [(ngModel)]="foodItem.price"
+                                required
+                                min="0"
+                                >
+                                <mat-error *ngIf="price.invalid">Please Enter valid price.</mat-error>
+                                </mat-form-field><br>
+            <button mat-raised-button
+            color="primary"
+             type="submit">UPDATE</button>
+                   </form>

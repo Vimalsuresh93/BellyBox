@@ -1,0 +1,47 @@
+.banner-section{background-image:url("/assets/images/bellobox\ edited\ cover1.jpg");
+    width: 100%;
+    background-size:cover;
+     height: 300px;
+      left: 0;
+       position: absolute; 
+       top:50px; 
+       background-position:0;}
+       .heading{
+           position: relative;
+           top:300px;
+           left:10px;
+          font-family:Sacramento ;
+           font-size: 80px;
+           color:#ff971d ;
+           
+       }
+     .content{
+         margin-top:-1rem ;
+         background-color:#393e46;
+         height:2000px;
+            }
+            .how-section1{
+                margin-top:0;
+                padding: 20%;
+            }
+            .how-section1 h4{
+                color: #ffa500;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            .how-section1 .subheading{
+                color: white;
+                font-size: 20px;
+            }
+            .how-section1 .row
+            {
+                margin-top: 10%;
+            }
+            .how-img 
+            {
+                text-align: center;
+            }
+            .how-img img{
+                width: 40%;
+            }
+           
