@@ -40,15 +40,15 @@ node server.js
 ```
 
 You will see a message "Database Connected" in terminal after successful connection with the database.Make sure you see the message in REPL terminal before going further steps.
-**>**Now our Front-end and Back-End is ready!now lets get into our application!!
+**>** Now our Front-end and Back-End is ready!now lets get into our application!!
 
 # HOW TO USE THIS APPLICATION
 
-**>**Go to browser and enter url "localhost:4200"(which is angular's default port number);
-**>**Now you will see  Home page;
-**>**In the home page you will see two buttons in the centre "Lets get started" & "want to know about me".
-**>**By pressing "Lets get started "it will guide you to a gateway page.By pressing "want to know about me" it will direct to about page where you can know more about the application.
-**>**In the gatewaypage you will see 6 modules.they are
+**>** Go to browser and enter url "localhost:4200"(which is angular's default port number);
+**>** Now you will see  Home page;
+**>** In the home page you will see two buttons in the centre "Lets get started" & "want to know about me".
+**>** By pressing "Lets get started "it will guide you to a gateway page.By pressing "want to know about me" it will direct to about page where you can know more about the application.
+**>** In the gatewaypage you will see 6 modules.they are
 	
 	1:Want to Share Food?(Donor page)
 	2:Want to Eat?(Eater page)
@@ -60,11 +60,11 @@ You will see a message "Database Connected" in terminal after successful connect
 
 ## SIGNUP&LOGIN PROCEDURE
 
-**>**Every user should be signed up to use each modules and to be part different modules user should be signed up differently.signing up to a module cant give access to other modules.
+**>** Every user should be signed up to use each modules and to be part different modules user should be signed up differently.signing up to a module cant give access to other modules.
 for eg( user who signed up for donor module cant use eater module unless user is signed up to eater module).
-**>**After successfull signing up the page will be redirected to the login page then it will redirected to the main page of different module.  
-**>**For logouting a logout button will arrive in the navbar after successful loging.
-**>**Since i have used JWT(JASON WEB TOKEN) method for secure signup and login, any unauthorized action can make make your token expire and your access will be blocked.user should finish the
+**>** After successfull signing up the page will be redirected to the login page then it will redirected to the main page of different module.  
+**>** For logouting a logout button will arrive in the navbar after successful loging.
+**>** Since i have used JWT(JASON WEB TOKEN) method for secure signup and login, any unauthorized action can make make your token expire and your access will be blocked.user should finish the
 session within 1 hr because i have set token expiration time to 1 hr and dont refresh in between the session it will erase the token and you will lose your access.To know more about my token method
 please read the detail in packages and method section given below.
 
@@ -101,24 +101,23 @@ details of donor and can contact directly.
 6:Contact Admin
 By Entering to this page user will find conatact details of admin to give feedbacks.
 
-METHODS AND PACKAGES USED
->I have used angular material library package & Bootstrap for Styling.
->I have used bcrypt for password encryption so that the user password will be safe and cant be visible to anyone.
->I have used Json Web token method for secure signup,login procedure since i have gone through the web docs i found that session process is outdated,not secure and in SPA(Single page
+## METHODS AND PACKAGES USED
+**>** Angular material library package & Bootstrap for Styling.
+**>** bcrypt for password encryption so that the user password will be safe and cant be visible to anyone.
+**>** Json Web token method for secure signup,login procedure since i have gone through the web docs i found that session process is outdated,not secure and in SPA(Single page
 application ) back end server is stateless or restful API so session process is not a good solution so i have learnt and implemented JWT method upto to a basic level.and it works perfectly.
-i have used a token expiration duration of 1 hour to increase security of the user.if any unsual acess is made from outside or inside app can make the token expire.it makes app secure. 
->I have implemented all CRUD Operations Sucessfully.
->I have used Mongo db atlas cloud Service so that i can access data from anywhere.
+**>** used a token expiration duration of 1 hour to increase security of the user.if any unsual acess is made from outside or inside app can make the token expire.it makes app secure. 
+**>** implemented all CRUD Operations Sucessfully.
+**>** used Mongo db atlas cloud Service so that i can access data from anywhere.
 
 # FUTURE SCOPE
->Due to short of time i couldnt implement image upload.image upload to cloud database need more time to learn so i am leaving it to future scope.
->GPS API implemention is something very important to this app.so that user will get notifications of nearby donors and eaters.since it take more time and investment 
+**>** Due to short of time i couldnt implement image upload.image upload to cloud database need more time to learn so i am leaving it to future scope.
+**>** GPS API implemention is something very important to this app.so that user will get notifications of nearby donors and eaters.since it take more time and investment 
 i am leaving it to future scope.
-> To include online interaction between donors&eaters.
->To include Online money transaction between donor& eater.
-CONCLUSION
-This application will have ups and downs since its a new application it needs to tested,and improved gradually.but i am proud to say that if this application is hosted this will make some
-solution to food wastage. 
+**>** To include online interaction between donors&eaters.
+**>**To include Online money transaction between donor& eater.
+
+
 
 
 
