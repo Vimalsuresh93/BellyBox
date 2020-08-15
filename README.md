@@ -110,12 +110,6 @@ application ) back end server is stateless or restful API so session process is 
 **>** implemented all CRUD Operations Sucessfully.
 **>** used Mongo db atlas cloud Service so that i can access data from anywhere.
 
-# FUTURE SCOPE
-**>** Due to short of time i couldnt implement image upload.image upload to cloud database need more time to learn so i am leaving it to future scope.
-**>** GPS API implemention is something very important to this app.so that user will get notifications of nearby donors and eaters.since it take more time and investment 
-i am leaving it to future scope.
-**>** To include online interaction between donors&eaters.
-**>**To include Online money transaction between donor& eater.
 
 
 
