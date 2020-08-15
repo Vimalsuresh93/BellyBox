@@ -1,13 +1,13 @@
-#BELLYBOX
+# BELLYBOX
 
-##AIM OF THIS APPLICATION
+## AIM OF THIS APPLICATION
 Bellybox is a web application which helps to reduce food wastage by connecting people with excess food to the needy.By loging in user can share their excess food for price or for free.
 user can also share their food for charity.
 
-##BASIC REQUIREMENTS TO RUN THIS APPLICATION
+## BASIC REQUIREMENTS TO RUN THIS APPLICATION
 Proper Internet Connection ( using mongodb atlas cloud DataBase,proper internet connection is mandatory),
 
-##IMPORTANT THINGS TO NOTE BEFORE RUNNING THIS APPLICATION.
+## IMPORTANT THINGS TO NOTE BEFORE RUNNING THIS APPLICATION.
 1.My backend server file is "server.js" file inside backend folder(not "app.js"),so dont run app.js instead of "server.js".
 2.Dont use nodemon to run backend "server.js" instead use command" node server.js".
 3.if your system shows  error message "bcrypt" then install "npm install --save bcrypt";
@@ -28,10 +28,9 @@ npm install
 ``` 
 ng serve
 ```
-or 
+**>**or 
 ``` 
 npm start
-``` 
 ```
 **>** after sucessfull complilation you will get "sucessful compilation"message in terminal.
 
@@ -40,36 +39,37 @@ npm start
 node server.js
 ```
 
-You will see a message "Database Connected" in REPL terminal after successful connection with the database.Make sure you see the message in REPL terminal before going further steps.
+You will see a message "Database Connected" in terminal after successful connection with the database.Make sure you see the message in REPL terminal before going further steps.
 **>**Now our Front-end and Back-End is ready!now lets get into our application!!
 
-HOW TO USE THIS APPLICATION
+# HOW TO USE THIS APPLICATION
 
->Go to browser and enter url "localhost:4200"(which is angular's default port number);
->Now you will see  Home page;
->In the home page you will see two buttons in the centre "Lets get started" & "want to know about me".
->By pressing "Lets get started "it will guide you to a gateway page.By pressing "want to know about me" it will direct to about page where you can know more about the application.
->In the gatewaypage you will see 6 modules.they are
-							1:Want to Share Food?(Donor page)
-							2:Want to Eat?(Eater page)
-							3:Want to be a hero?(Hero)
-							4:Want to Donate Food for Charity?(Charity page)
-							5:Are you a shelter home?(Shelter Home Zone)
-							6:Contact Admin	
+**>**Go to browser and enter url "localhost:4200"(which is angular's default port number);
+**>**Now you will see  Home page;
+**>**In the home page you will see two buttons in the centre "Lets get started" & "want to know about me".
+**>**By pressing "Lets get started "it will guide you to a gateway page.By pressing "want to know about me" it will direct to about page where you can know more about the application.
+**>**In the gatewaypage you will see 6 modules.they are
+	
+	1:Want to Share Food?(Donor page)
+	2:Want to Eat?(Eater page)
+	3:Want to be a hero?(Hero)
+	4:Want to Donate Food for Charity?(Charity page)
+	5:Are you a shelter home?(Shelter Home Zone)
+	6:Contact Admin	
 
 
-SIGNUP&LOGIN PROCEDURE
+## SIGNUP&LOGIN PROCEDURE
 
->Every user should be signed up to use each modules and to be part different modules user should be signed up differently.signing up to a module cant give access to other modules.
+**>**Every user should be signed up to use each modules and to be part different modules user should be signed up differently.signing up to a module cant give access to other modules.
 for eg( user who signed up for donor module cant use eater module unless user is signed up to eater module).
->After successfull signing up the page will be redirected to the login page then it will redirected to the main page of different module.  
->For logouting a logout button will arrive in the navbar after successful loging.
->Since i have used JWT(JASON WEB TOKEN) method for secure signup and login, any unauthorized action can make make your token expire and your access will be blocked.user should finish the
+**>**After successfull signing up the page will be redirected to the login page then it will redirected to the main page of different module.  
+**>**For logouting a logout button will arrive in the navbar after successful loging.
+**>**Since i have used JWT(JASON WEB TOKEN) method for secure signup and login, any unauthorized action can make make your token expire and your access will be blocked.user should finish the
 session within 1 hr because i have set token expiration time to 1 hr and dont refresh in between the session it will erase the token and you will lose your access.To know more about my token method
 please read the detail in packages and method section given below.
 
 
-LETS KNOW MORE ABOUT THESE MODULES
+# LETS KNOW MORE ABOUT THESE MODULES
 
 1:WANT TO SHARE FOOD?
 
@@ -110,7 +110,7 @@ i have used a token expiration duration of 1 hour to increase security of the us
 >I have implemented all CRUD Operations Sucessfully.
 >I have used Mongo db atlas cloud Service so that i can access data from anywhere.
 
-FUTURE SCOPE
+# FUTURE SCOPE
 >Due to short of time i couldnt implement image upload.image upload to cloud database need more time to learn so i am leaving it to future scope.
 >GPS API implemention is something very important to this app.so that user will get notifications of nearby donors and eaters.since it take more time and investment 
 i am leaving it to future scope.
