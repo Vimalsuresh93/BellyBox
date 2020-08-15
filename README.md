@@ -24,6 +24,7 @@ npm install
 ```
 
 **>** After changing the current directory to bellyboxapp run the angular server by entering command.
+
 ``` 
 ng serve
 ```
@@ -31,8 +32,9 @@ or
 ``` 
 npm start
 ``` 
-after sucessfull complilation you will get "sucessful compilation"message in terminal.
 ```
+**>** after sucessfull complilation you will get "sucessful compilation"message in terminal.
+
 **>**  Change directory to backend and open terminal,use command
 ```
 node server.js
